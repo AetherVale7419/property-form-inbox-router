@@ -1,0 +1,19 @@
+{
+  "name": "property-form-inbox-router",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/property_form_server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx tests/property_routing.test.ts",
+    "demo": "tsx scripts/send_sample_submission.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "@types/node": "^22.7.4"
+  }
+}

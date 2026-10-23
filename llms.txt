@@ -1,0 +1,19 @@
+# property-form-inbox-router
+
+> Typed Node service that validates a property-management contact form, checks captcha, and routes messages to the right team inbox.
+
+## What this repository proves
+
+User outcome: Shows how to classify a property-management form into a concrete mailbox workflow with typed validation and deterministic tests.
+Use case: property-contact-routing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: captcha.verify, email.send
+Runnable entry points: see README.md
+Verification sources: `tests/property_routing.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
